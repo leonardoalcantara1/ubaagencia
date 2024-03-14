@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
-import artists from '../../artists'
+import Head from 'next/head'
+import artists, { IArtist } from '../../artists'
 import {
   Cover,
   Title,
@@ -15,12 +16,8 @@ import {
   AgencyCopyright,
 } from '../../styles/styles'
 
-export default function Artist() {
+function Artist({ artist, slug }: { artist: IArtist; slug: string }) {
   const [scrolled, setScrolled] = useState(false)
-  const router = useRouter()
-
-  const slug = router.query.artist
-  const artist = artists[slug as string]
 
   useEffect(() => {
     if (slug && !artist)
@@ -41,6 +38,13 @@ export default function Artist() {
 
   return (
     <>
+      <Head>
+        <title>{artist?.title}</title>
+        <meta name="description" content={artist?.description} />
+        <meta property="og:title" content={artist?.title} />
+        <meta property="og:url" content="https://ubatrance.art/emize" />
+        <meta property="og:image" content={`/artists/${slug}/cover.jpg`} />
+      </Head>
       <Cover
         className={scrolled ? 'scrolled' : ''}
         style={{ backgroundImage: `url('/artists/${slug}/cover.jpg')` }}
@@ -105,3 +109,19 @@ export default function Artist() {
     </>
   )
 }
+
+export async function getServerSideProps(context: {
+  query: { artist: string }
+}) {
+  const { artist: slug } = context.query
+  const artist = artists[slug as string]
+
+  return {
+    props: {
+      artist,
+      slug,
+    },
+  }
+}
+
+export default Artist

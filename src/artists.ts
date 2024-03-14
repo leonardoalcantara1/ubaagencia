@@ -1,13 +1,15 @@
+export interface IArtist {
+  presskit: string
+  release: string
+  player?: string[]
+  soundcloud?: string
+  instagram: string
+  title: string
+  description: string
+}
+
 interface IArtists {
-  [key: string]: {
-    presskit: string
-    release: string
-    player?: string[]
-    soundcloud?: string
-    instagram: string
-    title: string
-    description: string
-  }
+  [key: string]: IArtist
 }
 
 const artists: IArtists = {

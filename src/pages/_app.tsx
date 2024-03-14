@@ -1,21 +1,16 @@
 /* istanbul ignore file */
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import { useRouter } from 'next/router'
 import GlobalStyles from 'styles/global'
-import artists from '../artists'
+import artists, { IArtist } from '../artists'
 
 export const metadata = {
   title: 'teste',
   description: 'teste',
 }
 
-function App({ Component, pageProps }: AppProps) {
-  const router = useRouter()
-
-  const slug = router.query.artist
-  const artist = artists[slug as string]
-
+function App(context: AppProps) {
+  const { Component, pageProps } = context
   return (
     <>
       <Head>
@@ -35,11 +30,6 @@ function App({ Component, pageProps }: AppProps) {
           href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet"
         />
-        <title>{artist?.title}</title>
-        <meta name="description" content={artist?.description} />
-        <meta property="og:title" content={artist?.title} />
-        <meta property="og:url" content="https://ubatrance.art/emize" />
-        <meta property="og:image" content={`/artists/${slug}/cover.jpg`} />
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />
