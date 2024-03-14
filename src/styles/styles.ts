@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Cover = styled.div`
   width: 100%;
-  height: 600px;
+  height: 520px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -156,9 +156,10 @@ export const AgencyCopyright = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
   background: #1b1b1b;
   margin-top: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
   h2 {
     margin: 0;
     img {

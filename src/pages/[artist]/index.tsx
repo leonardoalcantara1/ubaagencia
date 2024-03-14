@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
-import Head from 'next/head'
 import artists from '../../artists'
 import {
   Cover,
@@ -23,8 +22,6 @@ export default function Artist() {
   const slug = router.query.artist
   const artist = artists[slug as string]
 
-  console.log(artist, slug)
-
   useEffect(() => {
     if (slug && !artist)
       window.location.href = 'https://instagram.com/ubaculturatrance'
@@ -44,13 +41,6 @@ export default function Artist() {
 
   return (
     <>
-      <Head>
-        <title>{artist?.title}</title>
-        <meta name="description" content={artist?.description} />
-        <meta property="og:title" content={artist?.title} />
-        <meta property="og:url" content="https://ubatrance.art/emize" />
-        <meta property="og:image" content={`/artists/${slug}/cover.jpg`} />
-      </Head>
       <Cover
         className={scrolled ? 'scrolled' : ''}
         style={{ backgroundImage: `url('/artists/${slug}/cover.jpg')` }}
