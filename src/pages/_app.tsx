@@ -5,6 +5,11 @@ import { useRouter } from 'next/router'
 import GlobalStyles from 'styles/global'
 import artists from '../artists'
 
+export const metadata = {
+  title: 'teste',
+  description: 'teste',
+}
+
 function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
 
