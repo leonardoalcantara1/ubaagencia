@@ -1,0 +1,202 @@
+[debug] [2024-04-11T20:14:42.563Z] ----------------------------------------------------------------------
+[debug] [2024-04-11T20:14:42.565Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-04-11T20:14:42.565Z] CLI Version:   13.7.1
+[debug] [2024-04-11T20:14:42.566Z] Platform:      win32
+[debug] [2024-04-11T20:14:42.566Z] Node Version:  v20.12.2
+[debug] [2024-04-11T20:14:42.566Z] Time:          Thu Apr 11 2024 17:14:42 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2024-04-11T20:14:42.566Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-11T20:14:42.625Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-11T20:14:42.626Z] > authorizing via signed-in user (leonardo.mzalc@gmail.com)
+[debug] [2024-04-11T20:14:42.626Z] [iam] checking project uba-agencia for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-04-11T20:14:42.628Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/uba-agencia:testIamPermissions [none]
+[debug] [2024-04-11T20:14:42.629Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/uba-agencia:testIamPermissions x-goog-quota-user=projects/uba-agencia
+[debug] [2024-04-11T20:14:42.629Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/uba-agencia:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-11T20:14:43.831Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/uba-agencia:testIamPermissions 200
+[debug] [2024-04-11T20:14:43.831Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/uba-agencia:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-11T20:14:43.832Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/uba-agencia [none]
+[debug] [2024-04-11T20:14:44.537Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/uba-agencia 200
+[debug] [2024-04-11T20:14:44.537Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/uba-agencia {"projectId":"uba-agencia","projectNumber":"1090626885582","displayName":"uba-agencia","name":"projects/uba-agencia","resources":{"hostingSite":"uba-agencia"},"state":"ACTIVE","etag":"1_96c509e0-750c-4da8-a448-40071531e86c"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-04-11T20:14:58.899Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/uba-agencia/sites/uba-agencia [none]
+[debug] [2024-04-11T20:15:00.264Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/uba-agencia/sites/uba-agencia 200
+[debug] [2024-04-11T20:15:00.264Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/uba-agencia/sites/uba-agencia {"name":"projects/uba-agencia/sites/uba-agencia","defaultUrl":"https://uba-agencia.web.app","type":"DEFAULT_SITE"}
+[info] info  - Checking validity of types...
+
+[info] warn  - The Next.js plugin was not detected in your ESLint configuration. See https://nextjs.org/docs/basic-features/eslint#migrating-existing-config
+
+[info] 
+./src/pages/[artist]/index.tsx
+2:10  Warning: 'useRouter' is defined but never used.  @typescript-eslint/no-unused-vars
+26:26  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/pages/_app.tsx
+5:8  Warning: 'artists' is defined but never used.  @typescript-eslint/no-unused-vars
+5:19  Warning: 'IArtist' is defined but never used.  @typescript-eslint/no-unused-vars
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[info] info  - Creating an optimized production build...
+
+[info] info  - Disabled SWC as replacement for Babel because of custom Babel configuration ".babelrc.json" https://nextjs.org/docs/messages/swc-disabled
+
+[info] > [PWA] Compile client (static)
+
+[info] > [PWA] Auto register service worker with: C:\Users\Pichau\ubaagencia\node_modules\next-pwa\register.js
+> [PWA] Service worker: C:\Users\Pichau\ubaagencia\public\sw.js
+> [PWA]   url: /sw.js
+> [PWA]   scope: /
+
+[info] > [PWA] Compile server
+
+[info] info  - Using external babel configuration from C:\Users\Pichau\ubaagencia\.babelrc.json
+
+[info] info  - Compiled successfully
+
+[info] info  - Collecting page data...
+
+[info] info  - Generating static pages (0/3)
+
+[info] info  - Generating static pages (3/3)
+
+[info] info  - Finalizing page optimization...
+
+[info] 
+
+[info] Page                                       Size     First Load JS
+┌ ○ /                                      341 B          86.9 kB
+├   /_app                                  0 B            86.5 kB
+├ λ /[artist]                              1.9 kB         88.4 kB
+└ ○ /404                                   1.36 kB        87.9 kB
++ First Load JS shared by all              86.5 kB
+  ├ chunks/framework-91d7f78b5b4003c8.js   42.1 kB
+  ├ chunks/main-4141d431af7eb6cb.js        26.9 kB
+  ├ chunks/pages/_app-d0bedf86ab80eba4.js  16.1 kB
+  └ chunks/webpack-7adef0a23f2816b0.js     1.43 kB
+
+[info] 
+λ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • non-static route /[artist]
+[info] 
+[debug] [2024-04-11T20:15:17.034Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/uba-agencia/sites/uba-agencia [none]
+[debug] [2024-04-11T20:15:18.387Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/uba-agencia/sites/uba-agencia 200
+[debug] [2024-04-11T20:15:18.387Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/uba-agencia/sites/uba-agencia {"name":"projects/uba-agencia/sites/uba-agencia","defaultUrl":"https://uba-agencia.web.app","type":"DEFAULT_SITE"}
+[debug] [2024-04-11T20:15:18.875Z] Error: Source and destination must not be the same.
+    at C:\Users\Pichau\AppData\Roaming\nvm\v20.12.2\node_modules\firebase-tools\node_modules\fs-extra\lib\util\stat.js:49:19
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-04-11T20:16:59.677Z] ----------------------------------------------------------------------
+[debug] [2024-04-11T20:16:59.679Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
+[debug] [2024-04-11T20:16:59.679Z] CLI Version:   13.7.1
+[debug] [2024-04-11T20:16:59.679Z] Platform:      win32
+[debug] [2024-04-11T20:16:59.680Z] Node Version:  v20.12.2
+[debug] [2024-04-11T20:16:59.680Z] Time:          Thu Apr 11 2024 17:16:59 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2024-04-11T20:16:59.680Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-11T20:16:59.738Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-11T20:16:59.739Z] > authorizing via signed-in user (leonardo.mzalc@gmail.com)
+[debug] [2024-04-11T20:16:59.740Z] [iam] checking project uba-agencia for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-04-11T20:16:59.742Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/uba-agencia:testIamPermissions [none]
+[debug] [2024-04-11T20:16:59.743Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/uba-agencia:testIamPermissions x-goog-quota-user=projects/uba-agencia
+[debug] [2024-04-11T20:16:59.743Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/uba-agencia:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-11T20:17:01.089Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/uba-agencia:testIamPermissions 200
+[debug] [2024-04-11T20:17:01.090Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/uba-agencia:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-11T20:17:01.091Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/uba-agencia [none]
+[debug] [2024-04-11T20:17:01.948Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/uba-agencia 200
+[debug] [2024-04-11T20:17:01.948Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/uba-agencia {"projectId":"uba-agencia","projectNumber":"1090626885582","displayName":"uba-agencia","name":"projects/uba-agencia","resources":{"hostingSite":"uba-agencia"},"state":"ACTIVE","etag":"1_96c509e0-750c-4da8-a448-40071531e86c"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-04-11T20:17:16.316Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/uba-agencia/sites/uba-agencia [none]
+[debug] [2024-04-11T20:17:17.777Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/uba-agencia/sites/uba-agencia 200
+[debug] [2024-04-11T20:17:17.778Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/uba-agencia/sites/uba-agencia {"name":"projects/uba-agencia/sites/uba-agencia","defaultUrl":"https://uba-agencia.web.app","type":"DEFAULT_SITE"}
+[info] info  - Checking validity of types...
+
+[info] warn  - The Next.js plugin was not detected in your ESLint configuration. See https://nextjs.org/docs/basic-features/eslint#migrating-existing-config
+
+[info] 
+./src/pages/[artist]/index.tsx
+2:10  Warning: 'useRouter' is defined but never used.  @typescript-eslint/no-unused-vars
+26:26  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/pages/_app.tsx
+5:8  Warning: 'artists' is defined but never used.  @typescript-eslint/no-unused-vars
+5:19  Warning: 'IArtist' is defined but never used.  @typescript-eslint/no-unused-vars
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[info] info  - Creating an optimized production build...
+
+[info] info  - Disabled SWC as replacement for Babel because of custom Babel configuration ".babelrc.json" https://nextjs.org/docs/messages/swc-disabled
+
+[info] > [PWA] Compile client (static)
+
+[info] > [PWA] Auto register service worker with: C:\Users\Pichau\ubaagencia\node_modules\next-pwa\register.js
+> [PWA] Service worker: C:\Users\Pichau\ubaagencia\public\sw.js
+> [PWA]   url: /sw.js
+> [PWA]   scope: /
+
+[info] > [PWA] Compile server
+
+[info] info  - Using external babel configuration from C:\Users\Pichau\ubaagencia\.babelrc.json
+
+[info] info  - Compiled successfully
+
+[info] info  - Collecting page data...
+
+[info] info  - Generating static pages (0/3)
+
+[info] info  - Generating static pages (3/3)
+
+[info] info  - Finalizing page optimization...
+
+[info] 
+
+[info] Page                                       Size     First Load JS
+┌ ○ /                                      341 B          86.9 kB
+├   /_app                                  0 B            86.5 kB
+├ λ /[artist]                              1.9 kB         88.4 kB
+└ ○ /404                                   1.36 kB        87.9 kB
++ First Load JS shared by all              86.5 kB
+  ├ chunks/framework-91d7f78b5b4003c8.js   42.1 kB
+  ├ chunks/main-4141d431af7eb6cb.js        26.9 kB
+  ├ chunks/pages/_app-d0bedf86ab80eba4.js  16.1 kB
+  └ chunks/webpack-7adef0a23f2816b0.js     1.43 kB
+
+[info] 
+λ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • non-static route /[artist]
+[info] 
+[debug] [2024-04-11T20:17:35.358Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/uba-agencia/sites/uba-agencia [none]
+[debug] [2024-04-11T20:17:36.674Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/uba-agencia/sites/uba-agencia 200
+[debug] [2024-04-11T20:17:36.675Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/uba-agencia/sites/uba-agencia {"name":"projects/uba-agencia/sites/uba-agencia","defaultUrl":"https://uba-agencia.web.app","type":"DEFAULT_SITE"}
+[debug] [2024-04-11T20:17:37.149Z] Error: Source and destination must not be the same.
+    at C:\Users\Pichau\AppData\Roaming\nvm\v20.12.2\node_modules\firebase-tools\node_modules\fs-extra\lib\util\stat.js:49:19
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[error] 
+[error] Error: An unexpected error has occurred.
