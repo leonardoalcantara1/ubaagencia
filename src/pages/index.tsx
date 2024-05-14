@@ -50,7 +50,13 @@ function Home() {
           <Event>
             Panapaná - Luz da Noite :: <b>27/07</b>
           </Event>
-          <SocialButton className="contact">COMPRAR INGRESSOS</SocialButton>
+          <SocialButton
+            className="contact"
+            href="https://wa.me/5511970599131"
+            target="_blank"
+          >
+            COMPRAR INGRESSOS
+          </SocialButton>
           <Spacing />
           <DefaultTitle>ARTISTAS</DefaultTitle>
           <ArtistsGrid>
