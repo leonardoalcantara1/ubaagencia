@@ -13,6 +13,8 @@ import {
   SocialButton,
   Social,
 } from '../../styles/styles'
+import Link from 'next/link'
+import { css } from 'styled-components'
 
 function Artist({ artist, slug }: { artist: IArtist; slug: string }) {
   const [scrolled, setScrolled] = useState(false)
@@ -43,6 +45,36 @@ function Artist({ artist, slug }: { artist: IArtist; slug: string }) {
         <meta property="og:url" content="https://ubatrance.art/emize" />
         <meta property="og:image" content={`/artists/${slug}/cover.jpg`} />
       </Head>
+      <header
+        style={{
+          padding: '0.5rem',
+          fontWeight: 'bold',
+        }}
+      >
+        <Link href="/">
+          <span
+            style={{
+              textDecoration: 'none',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+          >
+            <b
+              style={{
+                display: 'block',
+                fontSize: '2rem',
+                transform: 'translateY(-3px)',
+                marginRight: '0.5rem',
+              }}
+            >
+              ←
+            </b>
+            <b style={{ display: 'block' }}>VOLTAR</b>
+          </span>
+        </Link>
+      </header>
       <Cover
         className={scrolled ? 'scrolled' : ''}
         style={{ backgroundImage: `url('/artists/${slug}/cover.jpg')` }}
