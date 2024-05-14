@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { useRouter } from 'next/router'
 import Head from 'next/head'
 import artists, { IArtist } from '../../artists'
 import {
@@ -13,7 +12,6 @@ import {
   Player,
   SocialButton,
   Social,
-  AgencyCopyright,
 } from '../../styles/styles'
 
 function Artist({ artist, slug }: { artist: IArtist; slug: string }) {
@@ -97,15 +95,6 @@ function Artist({ artist, slug }: { artist: IArtist; slug: string }) {
           </Social>
         </Wrapper>
       </Content>
-      <AgencyCopyright>
-        <h2>
-          <img
-            src="/img/logo-uba-agencia.svg"
-            title="Ubá Agência - DJs da cena trance no litoral extremo norte de São Paulo"
-            alt=""
-          />
-        </h2>
-      </AgencyCopyright>
     </>
   )
 }

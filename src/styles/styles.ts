@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styled from 'styled-components'
 
 export const Cover = styled.div`
@@ -11,6 +12,20 @@ export const Cover = styled.div`
 
   &.scrolled {
     height: 250px;
+  }
+`
+
+export const HomeCover = styled.div`
+  width: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-bottom: 2rem;
+  margin-top: -1rem;
+  img {
+    width: 100%;
+    display: block;
   }
 `
 
@@ -104,15 +119,6 @@ export const Player = styled.iframe`
   border: 0;
 `
 
-export const Social = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-top: 4rem;
-  @media (max-width: 767px) {
-    flex-direction: column;
-  }
-`
-
 export const SocialButton = styled.a`
   border: 0;
   outline: 0;
@@ -135,10 +141,6 @@ export const SocialButton = styled.a`
     margin-right: 1rem;
   }
 
-  &:not(:first-child) {
-    margin-left: 2rem;
-  }
-
   &.contact {
     border: 0;
     background: #25d366;
@@ -152,13 +154,25 @@ export const SocialButton = styled.a`
   }
 `
 
+export const Social = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  ${SocialButton}:not(:first-child) {
+    margin-left: 2rem;
+  }
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+`
+
 export const AgencyCopyright = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   background: #1b1b1b;
   margin-top: 3rem;
-  padding-top: 1rem;
+  padding-top: 2rem;
   padding-bottom: 2rem;
   h2 {
     margin: 0;
@@ -166,5 +180,49 @@ export const AgencyCopyright = styled.div`
       width: 90px;
       display: block;
     }
+  }
+`
+
+export const DefaultTitle = styled.h2`
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+`
+
+export const Event = styled.h3`
+  margin-bottom: 1rem;
+  font-weight: normal;
+  b {
+    color: #e91c48;
+  }
+`
+
+export const Spacing = styled.div`
+  margin-top: 2rem;
+`
+
+export const ArtistsGrid = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
+export const Artist = styled.div`
+  background-position: center;
+  background-size: cover;
+  border-radius: 6px;
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  height: 160px;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  h2 {
+    background: black;
+    padding: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    font-weight: 800;
   }
 `

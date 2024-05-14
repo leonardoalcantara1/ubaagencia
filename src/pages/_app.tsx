@@ -2,7 +2,7 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import GlobalStyles from 'styles/global'
-import artists, { IArtist } from '../artists'
+import Footer from 'components/Footer'
 
 export const metadata = {
   title: 'teste',
@@ -24,6 +24,8 @@ function App(context: AppProps) {
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-ignore
           crossOrigin="true"
         />
         <link
@@ -33,6 +35,7 @@ function App(context: AppProps) {
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />
+      <Footer />
     </>
   )
 }
