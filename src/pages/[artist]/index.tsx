@@ -92,7 +92,7 @@ function Artist({ artist, slug }: { artist: IArtist; slug: string }) {
             />
             <Release>
               {artist?.release}
-              <Presskit onClick={() => window.open(artist?.presskit)}>
+              <Presskit href={artist?.presskit} target="_blank">
                 Download Presskit
               </Presskit>
             </Release>

@@ -15,7 +15,7 @@ interface IArtists {
 
 const artists: IArtists = {
   emize: {
-    presskit: '/downloads/Emizê - Presskit 2024.zip',
+    presskit: 'https://drive.google.com/drive/folders/1xXmlV1nKVA7PK4_JO44O9-74aClPIjg8?usp=sharing',
     release:
       'Leonardo Martinez traz seu projeto de progressive trance chamado EMIZÊ, com um set elegante, melódico e dançante. Cantor, musicista, multi instrumentista, Leo passou a vida estudando e vivendo a música. Natural de São Paulo, usa toda a sua expertise musical e profissional trilhando o caminho da produção dentro da cena, remixando e produzindo seu set com muita identidade. Hoje idealizador do coletivo da UBÁ, também faz parte de vários projetos no litoral extremo norte de São Paulo.',
     player: [

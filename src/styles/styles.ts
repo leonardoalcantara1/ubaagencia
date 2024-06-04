@@ -93,7 +93,9 @@ export const Release = styled.h3`
   }
 `
 
-export const Presskit = styled.button`
+export const Presskit = styled.a`
+  display: block;
+  text-decoration: none;
   border: 0;
   outline: 0;
   background: #1b1b1b;
