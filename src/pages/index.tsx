@@ -42,12 +42,6 @@ function Home() {
           </HomeCover>
           <DefaultTitle>EVENTOS</DefaultTitle>
           <Event>
-            WARMUP Panapaná :: <b>24/05</b>
-          </Event>
-          <Event>
-            Clube UBÁ {'('}Fechado{')'} :: <b>22/06</b>
-          </Event>
-          <Event>
             Panapaná - Luz da Noite :: <b>27/07</b>
           </Event>
           <SocialButton
