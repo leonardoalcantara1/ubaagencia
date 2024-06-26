@@ -44,12 +44,15 @@ function Home() {
           <Event>
             Panapaná - Luz da Noite :: <b>27/07</b>
           </Event>
+          <Event>
+            Aquarius - Primeira Onda :: <b>09/11 e 10/11</b>
+          </Event>
           <SocialButton
             className="contact"
             href="https://wa.me/5511970599131"
             target="_blank"
           >
-            COMPRAR INGRESSOS
+            COMPRAR INGRESSOS SEM TAXA
           </SocialButton>
           <Spacing />
           <DefaultTitle>ARTISTAS</DefaultTitle>

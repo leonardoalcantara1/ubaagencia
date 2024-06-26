@@ -19,6 +19,7 @@ const artists: IArtists = {
     release:
       'Leonardo Martinez traz seu projeto de progressive trance chamado EMIZÊ, com um set elegante, melódico e dançante. Cantor, musicista, multi instrumentista, Leo passou a vida estudando e vivendo a música. Natural de São Paulo, usa toda a sua expertise musical e profissional trilhando o caminho da produção dentro da cena, remixando e produzindo seu set com muita identidade. Hoje idealizador do coletivo da UBÁ, também faz parte de vários projetos no litoral extremo norte de São Paulo.',
     player: [
+      'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1853253858&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
       'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1813071453&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
     ],
     soundcloud: 'leoemize',
