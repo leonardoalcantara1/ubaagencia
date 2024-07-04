@@ -15,7 +15,8 @@ interface IArtists {
 
 const artists: IArtists = {
   emize: {
-    presskit: 'https://drive.google.com/drive/folders/1xXmlV1nKVA7PK4_JO44O9-74aClPIjg8?usp=sharing',
+    presskit:
+      'https://drive.google.com/drive/folders/1xXmlV1nKVA7PK4_JO44O9-74aClPIjg8?usp=sharing',
     release:
       'Leonardo Martinez traz seu projeto de progressive trance chamado EMIZÊ, com um set elegante, melódico e dançante. Cantor, musicista, multi instrumentista, Leo passou a vida estudando e vivendo a música. Natural de São Paulo, usa toda a sua expertise musical e profissional trilhando o caminho da produção dentro da cena, remixando e produzindo seu set com muita identidade. Hoje idealizador do coletivo da UBÁ, também faz parte de vários projetos no litoral extremo norte de São Paulo.',
     player: [
@@ -31,7 +32,7 @@ const artists: IArtists = {
   comicbass: {
     presskit: '/downloads/ComicBass - Presskit 2024.zip',
     release:
-      'Ousado, inusitado e pra cima, Jefferson Morais traz seu projeto ComicBass! inspirado em Invasion, CaptainHook, Psylimbu, Intervoid, entre outros, e promete uma farofada elegante e de respeito. Nascido em Caraguatatuba/SP e morador de Ubatuba/SP, começou a trajetória em 2020 incentivado pelo seu tio desde a adolescência. Encontrou na cena o acolhimento e a família que o ajudaram naturalmente a superar a depressão, e hoje vem trazendo alegria por onde passa.',
+      'Ousado, inusitado e pra cima, Jefferson Morais traz seu projeto ComicBass! inspirado em Headroom, CaptainHook entre outros, e promete um som psicodelico elegante e dançante. Nascido em Caraguatatuba/SP e morador de Ubatuba/SP, começou a trajetória em 2020 incentivado pelo seu tio desde a adolescência. Encontrou na cena o acolhimento e a família que o ajudaram naturalmente a superar a depressão, e hoje vem trazendo muita energia e psicodelia por onde passa.',
     player: [
       'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1786340046&color=%238cb4b4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
     ],
