@@ -13,6 +13,10 @@ export const Cover = styled.div`
   &.scrolled {
     height: 250px;
   }
+
+  &.emize {
+    background-position: -200px center;
+  }
 `
 
 export const HomeCover = styled.div`

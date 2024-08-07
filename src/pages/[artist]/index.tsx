@@ -76,7 +76,7 @@ function Artist({ artist, slug }: { artist: IArtist; slug: string }) {
         </Link>
       </header>
       <Cover
-        className={scrolled ? 'scrolled' : ''}
+        className={[scrolled ? 'scrolled' : '', slug].join(' ')}
         style={{ backgroundImage: `url('/artists/${slug}/cover.jpg')` }}
       />
       <Title>
