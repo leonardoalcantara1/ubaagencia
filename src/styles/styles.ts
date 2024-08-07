@@ -15,7 +15,9 @@ export const Cover = styled.div`
   }
 
   &.emize {
-    background-position: -200px center;
+    @media (max-width: 768px) {
+      background-position: -200px center;
+    }
   }
 `
 
