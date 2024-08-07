@@ -91,7 +91,11 @@ function Artist({ artist, slug }: { artist: IArtist; slug: string }) {
               alt=""
             />
             <Release>
-              {artist?.release}
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: artist?.release.replace(/\n/g, '<br />'),
+                }}
+              />
               <Presskit href={artist?.presskit} target="_blank">
                 Download Presskit
               </Presskit>
