@@ -30,17 +30,19 @@ const artists: IArtists = {
       'Emizê é o projeto de progressive trance de Leonardo Martinez, DJ e produtor musical fundador do coletivo de artistas da UBÁ.',
   },
   comicbass: {
-    presskit: '/downloads/ComicBass - Presskit 2024.zip',
+    presskit:
+      'https://drive.google.com/drive/u/2/folders/1p1VAJnXeoKtdGKCM_0XBlYs2zQc4mgLJ',
     release:
-      'Ousado, inusitado e pra cima, Jefferson Morais traz seu projeto ComicBass! inspirado em Headroom, CaptainHook entre outros, e promete um som psicodelico elegante e dançante. Nascido em Caraguatatuba/SP e morador de Ubatuba/SP, começou a trajetória em 2020 incentivado pelo seu tio desde a adolescência. Encontrou na cena o acolhimento e a família que o ajudaram naturalmente a superar a depressão, e hoje vem trazendo muita energia e psicodelia por onde passa.',
+      'Ousado, inusitado e pra cima, Jefferson Morais traz seu projeto ComicBass! inspirado em Headroom, CaptainHook entre outros, e promete um som psicodelico, elegante e dançante. Nascido em Caraguatatuba/SP e morador de Ubatuba/SP, começou a trajetória em 2020 incentivado pelo seu tio desde a adolescência. ComicBass! traz um DJ set mesclando seus sons autorais com flexibilidade, se encaixando tanto na energia noturna quanto na diurna, surfando pela flexibilidade que Progressive Psytrance proporciona.',
     player: [
+      'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1859013630&color=%238cb4b4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
       'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1786340046&color=%238cb4b4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
     ],
     soundcloud: 'comicbass',
     instagram: 'comicbass_dj',
     title: 'ComicBass! - Projeto de Progressive Psytrance :: Ubá Coletivo',
     description:
-      'ComicBass! é o projeto de progressive trance e psytrance de Jefferon Morais, DJ e produtor musical que faz parte do coletivo de artistas da UBÁ',
+      'ComicBass! é o projeto de progressive psytrance de Jefferon Morais, DJ e produtor musical que faz parte do coletivo de artistas da UBÁ',
   },
   marciniak: {
     presskit: '/downloads/MarciniaK - Presskit 2024.zip',
