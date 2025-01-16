@@ -42,9 +42,9 @@ const artists: IArtists = {
     instagram: 'comicbass_dj',
     title: 'ComicBass! - Projeto de Progressive Psytrance :: Ubá Coletivo',
     description:
-      'ComicBass! é o projeto de progressive psytrance de Jefferon Morais, DJ e produtor musical que faz parte do coletivo de artistas da UBÁ',
+      'ComicBass! é o projeto de psytrance de Jefferon Morais, DJ e produtor musical que faz parte do coletivo de artistas da UBÁ',
   },
-  marciniak: {
+  /* marciniak: {
     presskit: '/downloads/MarciniaK - Presskit 2024.zip',
     release:
       'Dono de um estilo inconfundível, Matheus Marciniak ou apenas MarciniaK como é conhecido, traz um set explosivo surfando pelo Future Prog e Progressive Trance com diversas músicas autorais e drops marcantes. Matheus é formado em produção musical por Gustavo Prates a.k.a 8THSIN, e outros diversos produtores renomados do Brasil. Natural de Cascavel/PR, hoje é um dos principais nomes da região e vem se destacando na cena nacional. MarciniaK faz parte das gravadoras @psychedelic_recs 🇲🇽, @polifoniarec 🇧🇷 e compõe o time da UBÁ 🇧🇷',
@@ -60,7 +60,7 @@ const artists: IArtists = {
     description:
       'MarciniaK é o projeto de progressive trance e future prog de Matheus MarciniaK, DJ e produtor musical que faz parte do coletivo de artistas da UBÁ',
     labels: ['polifonia.png', 'psyrecs.png'],
-  },
+  }, */
 }
 
 export default artists
