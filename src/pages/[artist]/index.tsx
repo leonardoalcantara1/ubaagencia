@@ -6,11 +6,9 @@ import PresskitV2 from './PresskitV2'
 import Link from 'next/link'
 
 function Artist({ artist, slug }: { artist: IArtist; slug: string }) {
-
   useEffect(() => {
     if (slug && !artist)
       window.location.href = 'https://instagram.com/ubaculturatrance'
-
   }, [artist, slug])
 
   return (
@@ -52,9 +50,11 @@ function Artist({ artist, slug }: { artist: IArtist; slug: string }) {
           </span>
         </Link>
       </header>
-      {
-        artist.version === 2 ? <PresskitV2 artist={artist} slug={slug} /> : <PresskitV1 artist={artist} slug={slug} />
-      }
+      {artist.version === 2 ? (
+        <PresskitV2 artist={artist} slug={slug} />
+      ) : (
+        <PresskitV1 artist={artist} slug={slug} />
+      )}
     </>
   )
 }

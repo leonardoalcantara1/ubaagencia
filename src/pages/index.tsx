@@ -21,8 +21,8 @@ function Home() {
     <>
       <Head>
         <title>
-          UBÁ Coletivo - DJs e Produtores da cena psytrance com origem na região do litoral extremo
-          norte e Vale do Paraíba de São Paulo
+          UBÁ Coletivo - DJs e Produtores da cena psytrance com origem na região
+          do litoral extremo norte e Vale do Paraíba de São Paulo
         </title>
         <meta
           name="description"

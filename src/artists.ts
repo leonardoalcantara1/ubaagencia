@@ -6,12 +6,12 @@ export interface IArtist {
   instagram: string
   title: string
   description: string
-  labels?: string[],
-  version?: 1 | 2,
-  cover_caption?: string,
-  post1?: string,
-  post2?: string,
-  post3?: string,
+  labels?: string[]
+  version?: 1 | 2
+  cover_caption?: string
+  post1?: string
+  post2?: string
+  post3?: string
   release2?: string
 }
 
@@ -24,11 +24,13 @@ const artists: IArtists = {
     version: 2,
     presskit:
       'https://drive.google.com/drive/folders/1xXmlV1nKVA7PK4_JO44O9-74aClPIjg8?usp=sharing',
-    cover_caption: 'Leonardo Martinez traz seu projeto de progressive trance entitulado EMIZÊ | MZ, mesclando produções autorais e exclusivas em sets energéticos e emocionantes.',
+    cover_caption:
+      'Leonardo Martinez traz seu projeto de progressive trance entitulado EMIZÊ | MZ, mesclando produções autorais e exclusivas em sets energéticos e emocionantes.',
     post1: 'https://www.instagram.com/p/DFLCS2Tu2Qj',
     post2: 'https://www.instagram.com/p/DFQRwvnOhm4/',
     post3: 'https://www.instagram.com/p/C-tJALvym1W/',
-    release2: 'Cantor, musicista, multi instrumentista, Leo passou a vida estudando e vivendo a música. Natural de São Paulo, usa toda a sua expertise musical e profissional trilhando o caminho da produção dentro da cena, remixando e produzindo seu set com muita identidade.',
+    release2:
+      'Cantor, musicista, multi instrumentista, Leo passou a vida estudando e vivendo a música. Natural de São Paulo, usa toda a sua expertise musical e profissional trilhando o caminho da produção dentro da cena, remixando e produzindo seu set com muita identidade.',
     release:
       'Leonardo Martinez traz seu projeto de progressive trance intitulado EMIZÊ, com um set super energético, emocionante e dançante. Cantor, musicista, multi instrumentista, Leo passou a vida estudando e vivendo a música. Natural de São Paulo, usa toda a sua expertise musical e profissional trilhando o caminho da produção dentro da cena, remixando e produzindo seu set com muita identidade com tracks exclusivas.\n\nCom passagens pela Arcádia, Rave in SP, XTrance, Aya, Chemical Trance entre outras festas, vem construindo um público fiel e sempre presente por onde passa.',
     player: [
