@@ -71,7 +71,7 @@ const PresskitV2: FC<{ artist: IArtist; slug: string }> = ({
           <InstagramEmbed url={artist?.post2 || ''} />
           {artist?.player &&
             artist.player.map((p) => <Player key={p} src={p}></Player>)}
-          <InstagramEmbed url={artist.post3 || ''} />
+          <InstagramEmbed url={artist?.post3 || ''} />
           <Social>
             <SocialButton
               href={`https://instagram.com/${artist?.instagram}`}
