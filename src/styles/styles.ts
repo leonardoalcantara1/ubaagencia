@@ -21,6 +21,53 @@ export const Cover = styled.div`
   }
 `
 
+export const Cover2 = styled.div`
+  width: 100%;
+  height: calc(100vh - 48px - 105px);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px -50px 200px black inset;
+  transition: 0.3s height;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    padding: 16px;
+    line-height: 36px;
+  }
+
+  & > * {
+    z-index: 1;
+  }
+
+  &:before {
+    content: ' ';
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  /* &.emize {
+    @media (max-width: 768px) {
+      background-position: -1300px center;
+    }
+  } */
+`
+
 export const HomeCover = styled.div`
   width: 100%;
   overflow: hidden;
@@ -40,6 +87,10 @@ export const Title = styled.h1`
   justify-content: center;
   align-items: center;
   padding: 3rem 1rem;
+  &.v2 {
+    height: 105px;
+    padding: 1.5rem 1rem;
+  }
   img {
     position: static;
     width: 250px;
@@ -67,6 +118,8 @@ export const Bio = styled.div`
   img {
     max-width: 40%;
   }
+
+  margin-top: 2rem;
 
   @media (max-width: 767px) {
     flex-direction: column;
@@ -156,8 +209,9 @@ export const SocialButton = styled.a`
   }
 
   @media (max-width: 767px) {
+    width: 100%;
     &:not(:first-child) {
-      margin: 2rem 0 0;
+      margin: 2rem 0 0 !important;
     }
   }
 `
