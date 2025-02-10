@@ -20,7 +20,7 @@ const artists: IArtists = {
     presskit:
       'https://drive.google.com/drive/folders/1xXmlV1nKVA7PK4_JO44O9-74aClPIjg8?usp=sharing',
     release:
-      'Leonardo Martinez traz seu projeto de progressive trance intitulado EMIZÊ, com um set super energético, emocionante e dançante. Cantor, musicista, multi instrumentista, Leo passou a vida estudando e vivendo a música. Natural de São Paulo, usa toda a sua expertise musical e profissional trilhando o caminho da produção dentro da cena, remixando e produzindo seu set com muita identidade.\n\nCom passagens pela Arcádia, Chaotic, XTrance, United, Chemical Trance entre outras festas, vem construindo um público fiel e sempre presente por onde passa.\n\nHoje idealizador da Ubá Cultura Trance, coletivo de artistas do litoral extremo norte responsável por diversos eventos locais como Panapaná, Ubah e Aquarius Festival.',
+      'Leonardo Martinez traz seu projeto de progressive trance intitulado EMIZÊ, com um set super energético, emocionante e dançante. Cantor, musicista, multi instrumentista, Leo passou a vida estudando e vivendo a música. Natural de São Paulo, usa toda a sua expertise musical e profissional trilhando o caminho da produção dentro da cena, remixando e produzindo seu set com muita identidade com tracks exclusivas.\n\nCom passagens pela Arcádia, Rave in SP, XTrance, Aya, Chemical Trance entre outras festas, vem construindo um público fiel e sempre presente por onde passa.',
     player: [
       'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1853253858&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
       'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1813071453&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
@@ -44,9 +44,9 @@ const artists: IArtists = {
     instagram: 'comicbass_dj',
     title: 'ComicBass! - Projeto de Progressive Psytrance :: Ubá Coletivo',
     description:
-      'ComicBass! é o projeto de progressive psytrance de Jefferon Morais, DJ e produtor musical que faz parte do coletivo de artistas da UBÁ',
+      'ComicBass! é o projeto de psytrance de Jefferon Morais, DJ e produtor musical que faz parte do coletivo de artistas da UBÁ',
   },
-  marciniak: {
+  /* marciniak: {
     presskit: '/downloads/MarciniaK - Presskit 2024.zip',
     release:
       'Dono de um estilo inconfundível, Matheus Marciniak ou apenas MarciniaK como é conhecido, traz um set explosivo surfando pelo Future Prog e Progressive Trance com diversas músicas autorais e drops marcantes. Matheus é formado em produção musical por Gustavo Prates a.k.a 8THSIN, e outros diversos produtores renomados do Brasil. Natural de Cascavel/PR, hoje é um dos principais nomes da região e vem se destacando na cena nacional. MarciniaK faz parte das gravadoras @psychedelic_recs 🇲🇽, @polifoniarec 🇧🇷 e compõe o time da UBÁ 🇧🇷',
@@ -62,7 +62,7 @@ const artists: IArtists = {
     description:
       'MarciniaK é o projeto de progressive trance e future prog de Matheus MarciniaK, DJ e produtor musical que faz parte do coletivo de artistas da UBÁ',
     labels: ['polifonia.png', 'psyrecs.png'],
-  },
+  }, */
 }
 
 export default artists
