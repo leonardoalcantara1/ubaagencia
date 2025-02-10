@@ -43,14 +43,14 @@ const PresskitV2: FC<{ artist: IArtist; slug: string }> = ({
         className={[scrolled ? 'scrolled' : '', slug].join(' ')}
         style={{ backgroundImage: `url('/artists/${slug}/cover.jpg')` }}
       >
-        <h2>{artist.cover_caption}</h2>
+        <h2>{artist?.cover_caption}</h2>
         <Presskit href={artist?.presskit} target="_blank">
           Download Presskit
         </Presskit>
       </Cover2>
       <Content>
         <Wrapper>
-          <InstagramEmbed url={artist.post1 || ''} />
+          <InstagramEmbed url={artist?.post1 || ''} />
           <Bio>
             <img
               src={`/artists/${slug}/bio.jpg`}
@@ -68,7 +68,7 @@ const PresskitV2: FC<{ artist: IArtist; slug: string }> = ({
               </Presskit>
             </Release>
           </Bio>
-          <InstagramEmbed url={artist.post2 || ''} />
+          <InstagramEmbed url={artist?.post2 || ''} />
           {artist?.player &&
             artist.player.map((p) => <Player key={p} src={p}></Player>)}
           <InstagramEmbed url={artist.post3 || ''} />
