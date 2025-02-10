@@ -21,16 +21,16 @@ function Home() {
     <>
       <Head>
         <title>
-          UBÁ Coletivo - DJs da cena trance na região do litoral extremo norte e
-          Vale do Paraíba de São Paulo
+          UBÁ Coletivo - DJs e Produtores da cena psytrance com origem na região do litoral extremo
+          norte e Vale do Paraíba de São Paulo
         </title>
         <meta
           name="description"
-          content="Coletivo de produtores musicais e DJs da cena trance na região do Vale do Paraíba e litoral extremo norte de São Paulo vinculado ao grupo de produção cultural de mesmo nome, natural de Ubatuba/SP"
+          content="Coletivo de produtores musicais e DJs da cena psytrance na região do Vale do Paraíba e litoral extremo norte de São Paulo."
         />
         <meta
           property="og:title"
-          content="UBÁ Coletivo - DJs da cena trance na região do litoral extremo norte e Vale do Paraíba de São Paulo"
+          content="UBÁ Coletivo - DJs e Produtores da cena psytrance com origem na região do litoral extremo norte e Vale do Paraíba de São Paulo"
         />
         <meta property="og:url" content="https://ubatrance.art" />
         <meta property="og:image" content="/img/Cover.png" />
@@ -40,7 +40,7 @@ function Home() {
           <HomeCover>
             <img src="/img/Cover.png" alt="" />
           </HomeCover>
-          <DefaultTitle>EVENTOS</DefaultTitle>
+          {/* <DefaultTitle>EVENTOS</DefaultTitle>
           <Event>
             Panapaná - Luz da Noite :: <b>27/07</b>
           </Event>
@@ -53,7 +53,7 @@ function Home() {
             target="_blank"
           >
             COMPRAR INGRESSOS SEM TAXA
-          </SocialButton>
+          </SocialButton> */}
           <Spacing />
           <DefaultTitle>ARTISTAS</DefaultTitle>
           <ArtistsGrid>

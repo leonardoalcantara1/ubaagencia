@@ -6,7 +6,8 @@ export interface IArtist {
   instagram: string
   title: string
   description: string
-  labels?: string[]
+  labels?: string[],
+  version?: 1 | 2
 }
 
 interface IArtists {
@@ -15,6 +16,7 @@ interface IArtists {
 
 const artists: IArtists = {
   emize: {
+    version: 2,
     presskit:
       'https://drive.google.com/drive/folders/1xXmlV1nKVA7PK4_JO44O9-74aClPIjg8?usp=sharing',
     release:
